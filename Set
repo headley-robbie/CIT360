@@ -34,7 +34,6 @@ public class SetDemo {
     
 }
 
-This would produce the following result:
-
+Output should be
 The sorted list is:
 [10, 20, 30, 40, 50]
