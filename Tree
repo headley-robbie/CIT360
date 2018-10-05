@@ -1,0 +1,32 @@
+
+import java.util.ArrayList;
+import java.util.List;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Robbie
+ */
+public class Tree {
+   
+    public class Tree<T> {
+    private final Node<T> root;
+
+    public Tree(T rootData) {
+        root = new Node<>();
+        root.data = rootData;
+        root.children = new ArrayList<>();
+    }
+
+    public class Node<T> {
+        private T data;
+        private Node<T> parent;
+        private List<Node<T>> children;
+    }
+ }
+}
