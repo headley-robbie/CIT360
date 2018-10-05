@@ -1,0 +1,26 @@
+package runnables;
+
+/**
+ *
+ * @author Robbie
+ */
+public class Runnables {
+ public void run() {
+        System.out.println("Inside : " + Thread.currentThread().getName());
+    }
+
+    public static void main(String[] args) {
+        System.out.println("Inside : " + Thread.currentThread().getName());
+        System.out.println("Creating thread...");
+        Thread thread = new Thread();
+        System.out.println("Starting thread...");
+        thread.start();
+    }
+    
+}
+
+Output should be 
+run:
+Inside : main
+Creating thread...
+Starting thread...
