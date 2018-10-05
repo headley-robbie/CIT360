@@ -1,0 +1,33 @@
+package threads;
+
+/**
+ *
+ * @author Robbie
+ */
+public class Threads {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+    
+    Runnable task = () -> {
+        String threadName = Thread.currentThread().getName();
+        System.out.println("Hi " + threadName);
+    };
+    
+    task.run();
+    
+    Thread thread;
+        thread = new Thread(task);
+    thread.start();
+    
+    System.out.println("Done!");
+}
+}
+
+Output:
+Hi main
+Done!
+Hi Thread-0
