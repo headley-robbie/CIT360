@@ -1,0 +1,29 @@
+import java.util.HashMap;
+
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author Robbie
+ */
+public class Map {
+
+   public static void main(String[] args) {
+      HashMap m1 = new HashMap(); 
+      m1.put("Robbie", "30");
+      m1.put("Cole", "31");
+      m1.put("Erin", "32");
+      m1.put("Sam", "33");
+      System.out.println();
+      System.out.println(" Map Elements");
+      System.out.print("\t" + m1);
+   }
+
+    private void put(String ryan, String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
