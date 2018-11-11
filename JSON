@@ -3,6 +3,12 @@
  * @author Robbie
  */
 public class JSON {
+     function (data) {
+
+var json = jQuery.parseJSON(data);
+alert( json.name );
+
+}
      static {"GetAddress": {
    "MESSAGE_TEXT_LONG": "Success",
    "RETURN_CODE": 0,
@@ -25,9 +31,4 @@ public class JSON {
          },
       ]
    }
-   $.ajax({
-  ..
-  dataType: 'json' 
-  // using json, jquery will make parse for you
-});
 }
