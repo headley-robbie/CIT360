@@ -1,0 +1,67 @@
+public class MyUnitTest {
+
+    @Test
+    public void testGetTheStringArray() {
+        MyUnit myUnit = new MyUnit();
+
+        String[] expectedArray = {"one", "two", "three"};
+
+        String[] resultArray =  myUnit.getTheStringArray();
+
+        assertArrayEquals(expectedArray, resultArray);
+    }
+    
+    public class MyUnitTest {
+
+    @Test
+    public void testConcatenate() {
+        MyUnit myUnit = new MyUnit();
+
+        String result = myUnit.concatenate("one", "two");
+
+        assertEquals("onetwo", result);
+    }
+    
+    public class MyUnitTest {
+
+    @Test
+    public void testGetTheBoolean() {
+        MyUnit myUnit = new MyUnit();
+
+        assertTrue (myUnit.getTheBoolean());
+
+        assertFalse(myUnit.getTheBoolean());
+    }
+    
+    public class MyUnitTest {
+
+    @Test
+    public void testGetTheObject() {
+        MyUnit myUnit = new MyUnit();
+
+        assertNull(myUnit.getTheObject());
+
+        assertNotNull(myUnit.getTheObject());
+    }
+    
+    public class MyUnitTest {
+
+    @Test
+    public void testGetTheSameObject() {
+        MyUnit myUnit = new MyUnit();
+
+        assertSame   (myUnit.getTheSameObject(),
+                      myUnit.getTheSameObject());
+        
+        assertNotSame(myUnit.getTheSameObject(),
+                      myUnit.getTheSameObject());
+    }
+    
+    public class MyMatcherTest {
+
+    @Test
+    public void testWithMatchers() {
+        assertThat("this string", is("this string"));
+        assertThat(123, is(123));
+    }
+}
