@@ -25,4 +25,9 @@ public class JSON {
          },
       ]
    }
- }
+   $.ajax({
+  ..
+  dataType: 'json' 
+  // using json, jquery will make parse for you
+});
+}
