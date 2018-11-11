@@ -1,0 +1,28 @@
+/**
+ *
+ * @author Robbie
+ */
+public class JSON {
+     static {"GetAddress": {
+   "MESSAGE_TEXT_LONG": "Success",
+   "RETURN_CODE": 0,
+     "GetAddressSub":    {
+      "SAVED": "N",
+      "ID": "023438",
+      "ADDRESS":       [
+                  {
+            "ADDRESS1": "123 ABC St",
+            "ADDRESS2": "",
+            "ADDRESSLONG": "123 ABC St \nPrattville, AL \nPrattville ",
+            "ADDRESS_TYPE": "HOME",
+            "CITY": "Prattville",
+            "COUNTRY": "USA",
+            "COUNTY": "Autauga",
+            "EFFDT": "2015-09-23",
+            "ID": "023438",
+            "POSTAL": "",
+            "STATE": "AL"
+         },
+      ]
+   }
+ }
